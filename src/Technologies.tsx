@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 
+
 interface Technology {
   id: string;
   name: string;
@@ -24,6 +25,7 @@ const Technologies = () => {
 
   // Add technology to stack
   const addToStack = (technology: Technology) => {
+   
     const alreadyAdded = stack.some(
       (item) => item.id === technology.id
     );
