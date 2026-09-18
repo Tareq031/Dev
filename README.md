@@ -10,8 +10,7 @@ Dev Stack is a responsive React application where users can explore different we
 - TypeScript
 - Tailwind CSS
 - JavaScript
-- HTML
-- CSS
+- JSON
 
 ✨ Features
 
@@ -35,16 +34,14 @@ React-Toastify is used to show notifications when a technology is added, a dupli
 
 JSX stands for JavaScript XML. It allows us to write HTML-like code inside JavaScript. React uses JSX to make UI code easier to write and understand.
 
+
 2. What is the difference between props and state?
 
 Props are used to pass data from a parent component to a child component.
 
 State is data managed inside a component that can change over time.
 
-In short:
 
-- Props → Data received from parent
-- State → Data managed inside the component
 
 3. What does the useState hook do, and where did you use it in this project?
 
@@ -52,11 +49,15 @@ In short:
 
 In this project, I used "useState" to manage the technology data and My Stack items.
 
+
+
 4. What does the useEffect hook do, and why did you need it to load the JSON data?
 
 "useEffect" is used to perform side effects in a React component.
 
 I used "useEffect" to load the technology data from the local JSON file when the component loads.
+
+
 
 5. Why does every item in a .map() list need a unique key prop?
 
@@ -64,29 +65,21 @@ React needs a unique "key" to identify each item in a list.
 
 It helps React understand which item was added, removed, or changed, so it can update the UI efficiently.
 
+
+
 6. What is conditional rendering? Show one place you used it.
 
 Conditional rendering means showing different UI depending on a condition.
 
 In this project, I used it to show an empty stack message when there are no technologies in My Stack.
 
-For example:
 
-{myStack.length === 0 ? (
-  <p>Your stack is empty.</p>
-) : (
-  <StackList />
-)}
 
 7. How do you pass data from a parent component to a child component, and how does a child send something back to the parent?
 
 A parent sends data to a child using props.
 
 A child can send something back to the parent by calling a function passed through props.
-
-For example:
-
-<Child data={data} onAdd={handleAdd} />
 
 Here, "data" is passed from the parent to the child, and "onAdd" allows the child to send an action back to the parent.
 
@@ -97,6 +90,9 @@ Here, "data" is passed from the parent to the child, and "onAdd" allows the chil
 Tarequl Islam
 
 Beginner Web Developer | Frontend Developer
+---------------------------------------
+
+
 
 
 # React + TypeScript + Vite
